@@ -1,5 +1,4 @@
-# Hosted link :https://codepen-clone-33e83.web.app/home/signup
-# versal link : https://codepen-project-tqsl.vercel.app/home/signup
+# Hosted link : https://codepen-project-tqsl.vercel.app/home/signup
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
