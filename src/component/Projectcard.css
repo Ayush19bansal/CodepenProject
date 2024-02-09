@@ -1,9 +1,61 @@
 .projectcardcontainer{
-    width: 22%;
-    height: 48%;
-    border: 2px solid red;
+    width: 20%;
+    height: 50%;
+    /* border: 2px solid red; */
     background-color: #252830;
+    border: 1px solid gray;
+    border-radius: 10px;
    
+}
+.iframeproj{
+    height: 75%;
+    width:100%;
+    margin-top: 10px;
+    /* border: 2px solid yellow; */
+}
+.titlename{
+    font-weight: bold;
+}
+.small{
+    font-size: small;
+}
+.iframewidth{
+
+    width: 90%;
+    margin: auto;
+}
+.imgandall{
+    display: flex;
+    height: 25%;
+    align-items: center;
+    padding-left: 13px;
+    gap: 15px;
+}
+.pp{
+    width: 30px;
+    text-align: center;
+    background-color: rgb(7, 81, 38);
+    justify-content: center;
+    display: flex;
+    font-size: large;
+    padding: 3px;
+    font-weight: bold;
+}
+.bookmark{
+    font-size: x-large;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.first{
+    margin-top: 20px;
+    height: 100%;
+}
+.second{
+    margin-top: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid pink; */
 }
 .projectcontainer{
     display: flex;

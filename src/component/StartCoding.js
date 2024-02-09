@@ -28,6 +28,7 @@ function StartCoding() {
   const [title, settile] = useState("");
   const [istitle, setistitle] = useState("Untitled");
 
+
    const user = useSelector((state)=> state.user.user);
 
   useEffect(() => {
@@ -86,7 +87,7 @@ function StartCoding() {
 
   async function savedata(){
     const id=`${Date.now()}`
-    const  data={id:id, html:html_edit, css:css_edit, js:js_edit,Result:output};
+    const  data={id:id, html:html_edit, css:css_edit, js:js_edit,Result:output,photo:user.photoURL,email: user.email,title:istitle , creator: user.displayName};
      await setDoc(doc(db,"Project",id),data).then(()=>{
      notify("Data Saved")
      }).catch((err)=>{
@@ -157,7 +158,7 @@ function StartCoding() {
             
           >
             <Splitter className="one">
-              <SplitterPanel className="html" size={75}
+              <SplitterPanel className="html codemirror" size={75}
                style={{ borderRight: "4px solid  #386f9b" }}  >
                 <div className="htmlcontainer">
                   <div className="htmliconbox">
@@ -187,7 +188,7 @@ function StartCoding() {
                 </div>
               </SplitterPanel>
               <SplitterPanel
-                className="css"
+                className="css codemirror"
                 style={{ borderRight: "4px solid  #386f9b" }}
                 size={75}
                
@@ -218,7 +219,7 @@ function StartCoding() {
                 </div>
               </SplitterPanel>
               <SplitterPanel
-                className="js"
+                className="js codemirror"
                 
                 size={75}
               >
@@ -249,7 +250,7 @@ function StartCoding() {
               </SplitterPanel>
             </Splitter>
           </SplitterPanel>
-          <SplitterPanel  
+          <SplitterPanel 
             className="flex align-items-center justify-content-center"
            
           >

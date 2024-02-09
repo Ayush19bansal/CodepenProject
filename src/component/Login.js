@@ -55,7 +55,7 @@ function Login() {
         <br/>
        <div className='email'>
         <FaEnvelope style={{color:"gray" ,fontSize:"large",marginLeft:"7px"}}></FaEnvelope>
-        <input type='email' value={email} placeholder='Email' style={{backgroundColor:"transparent",border:"none"}} onChange={(e)=>{setemail(e.target.value)}}></input>
+        <input type='email' value={email} placeholder='Email' style={{backgroundColor:"transparent",border:"none",color:"black"}} onChange={(e)=>{setemail(e.target.value)}}></input>
        </div>
   
 
@@ -66,7 +66,7 @@ function Login() {
         <MdPassword style={{color:"gray" ,fontSize:"large",marginLeft:"7px"}}></MdPassword>
         <input type={isshow?"password":"text"} value={password} onChange={(e)=>{
           setpassword(e.target.value)
-        }} placeholder='Password' style={{backgroundColor:"transparent",border:"none"}}
+        }} placeholder='Password' style={{color:"black",backgroundColor:"transparent",border:"none"}}
         ></input>
        <motion.div whileTap={{scale:"0.9"}} style={{display:"flex",justifyContent:"center"}}>
         {

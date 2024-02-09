@@ -1,25 +1,36 @@
 import React from 'react'
 import "./Projectcard.css"
 import { useSelector } from 'react-redux';
+import {MdBookmark} from "react-icons/md"
 
 function ProjectCard({project,index}) {
-    const user=useSelector((state)=> state.user.user)
-    const projects=useSelector((state)=>state.project.project);
+    const user=useSelector((state)=> state.user?.user)
   return (
     <div className='projectcardcontainer'>
-     <div>
-     <iframe className='iframeproj'
+     <div className='iframeproj'>
+     <iframe className='iframewidth'
                     srcDoc={project.Result}
                     title="output"
                     sandbox="allow-scripts"
-                    width="100%"
+                   
+                    height="100%"
                 >
                 </iframe>
      </div>
 
      <div className='imgandall'>
     
-        {project?.user?.photoURL? (<img src={project?.user?.photoURL}></img>):(<p className='p'>a</p>)}
+        <div className='first'>
+        {project?.photo? (<img src={project?.photo} style={{height:"50%"}}></img>):(<p className='pp' style={{height:"50%"}}> {project.email[0].toUpperCase()}</p>)}
+        </div>
+
+       <div className='second'>
+       <div className='titlename'>{project?.title}</div>
+       <div className='small'>{project?.creator? (project.creator):(project.email.split('@')[0])}</div>
+       
+       </div>
+
+       <motiondiv className='bookmark'><MdBookmark/></motiondiv>
 
     
      </div>
