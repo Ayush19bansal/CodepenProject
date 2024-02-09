@@ -1,0 +1,86 @@
+.containersign{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.imgtag{
+  width: 100px;
+  padding-top: 22px;
+  margin-bottom: 13px;
+}
+p{
+  text-align: center;
+}
+.email,.password{
+  background-color: white;
+  border-radius: 5px;
+  /* padding: 7px; */
+  width:  320px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-block: 7px;
+  padding: 10px;
+}
+
+.email input{
+  width: 100%;
+  margin-left: 10px; 
+}
+.password input{
+  width: 100%;
+  margin-left: 10px; 
+}
+input:focus{
+  outline: none;
+}
+label{
+  font-size: small;
+
+}
+.register{
+  /* max-width: 100%; */
+  margin: auto;
+  /* border: 2px solid red; */
+  background-color: #252830;
+  padding-inline: 40px;
+  padding-block: 10px;
+  margin-block:  20px;
+}
+.button{
+  color:white;
+  background-color: #10BA81;
+  border-radius: 5px;
+  width:  320px;
+  padding: 7px;
+  margin-block: 15px;
+  cursor: pointer;
+}
+.or{
+  margin-top: 12px;
+}
+.line{
+  margin-top: 11px;
+  height: 1px;
+  width: 42%;
+ background-color: rgb(77, 76, 76);
+}
+.signupoptions{
+  display: flex;
+  color:white;
+  background-color: #444857;
+  border-radius: 5px;
+  width:  320px;
+  padding: 7px;
+  margin-block: 15px;
+  cursor: pointer;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.signupoptions:hover{
+  background-color: transparent;
+  border: 1px solid white;
+}
