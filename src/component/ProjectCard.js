@@ -12,6 +12,7 @@ function ProjectCard({project,index}) {
                     srcDoc={project.Result}
                     title="output"
                     sandbox="allow-scripts"
+                    width="100%"
                 >
                 </iframe>
      </div>

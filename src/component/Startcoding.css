@@ -127,12 +127,13 @@
 .iframecont{
     background-color: white;
     height: 100%;
-   
+    width:  100%;
     /* border: 2px solid rgb(27, 190, 65); */
 }
 .iframecont2{
     /* border: 4px solid yellow; */
     height: 100%;
+    width: 100%;
 }
 .iframecont2 h2{
     color: black;
