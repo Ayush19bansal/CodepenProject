@@ -89,7 +89,7 @@ function StartCoding() {
     const id=`${Date.now()}`
     const  data={id:id, html:html_edit, css:css_edit, js:js_edit,Result:output,photo:user.photoURL,email: user.email,title:istitle , creator: user.displayName};
      await setDoc(doc(db,"Project",id),data).then(()=>{
-     notify("Data Saved")
+     notify("Project Saved")
      }).catch((err)=>{
       errorNotification(err.message)
      })
