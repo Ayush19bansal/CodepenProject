@@ -1,6 +1,6 @@
 .projectcardcontainer{
-    width: 20%;
-    height: 50%;
+    /* width: 20%; */
+    /* height: 50%; */
     /* border: 2px solid red; */
     background-color: #252830;
     border: 1px solid gray;
@@ -20,7 +20,7 @@
     font-size: small;
 }
 .iframewidth{
-
+   
     width: 90%;
     margin: auto;
 }
@@ -43,7 +43,7 @@
 }
 .bookmark{
     font-size: x-large;
-    margin-left: 50px;
+    margin-left: 37%;
     margin-bottom: 10px;
 }
 .first{

@@ -157,7 +157,7 @@ function StartCoding() {
             className="htmlcssjs"
             
           >
-            <Splitter className="one">
+            <Splitter className="one co">
               <SplitterPanel className="html codemirror" size={75}
                style={{ borderRight: "4px solid  #386f9b" }}  >
                 <div className="htmlcontainer">

@@ -8,11 +8,12 @@ import { Link,Route, Routes} from 'react-router-dom';
 import Project from './Project';
 import SignUp from './SignUp';
 import Login from './Login';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import UserProfileDetails from './UserProfileDetails';
 import StartCoding from './StartCoding';
 import { toast, ToastContainer } from 'react-toastify';
   import "react-toastify/dist/ReactToastify.css";
+import { Setsearch } from '../context/actions/serachAction';
 
 
 
@@ -21,6 +22,10 @@ function Home() {
     // const [user,setuser]=useState();
 
     const user=useSelector((state)=> state.user?.user);
+    const search =useSelector((state)=>state.search?.search?state.search?.search : "")
+    
+    const dispatch=useDispatch()
+
     let refvis=useRef();
 
     function close(){
@@ -50,11 +55,11 @@ function Home() {
 
             {
                 user ? <Link to="/startcoding" style={{textDecoration:"none" , color:"white"}}>
-                <div className={sidemenu?"box1": "hide"} >
+                <div className={sidemenu?"box": "hide"} >
                     <p>Start Coding</p></div>
                     
             </Link> : (<Link to="/home/signup" style={{textDecoration:"none" , color:"white"}}>
-                <div className={sidemenu?"box1": "hide"} >
+                <div className={sidemenu?"box": "hide"} >
                     <p>Start Coding</p></div>
                     {alert("Login First ")}
             </Link>)
@@ -76,7 +81,8 @@ function Home() {
     <div className='right'>
         <div style={{display:"flex", alignItems:"center",gap:"7px"}}>
             <FaSearchengin style={{fontSize:"x-large"}}/>
-            <input id='inputserach' type='text' placeholder='Search here ...' style={{backgroundColor:"#252830",border:"none",padding:"15px",color:"white" ,width:"81%"}}></input>
+            <input id='inputserach' type='text' placeholder='Search here ...' style={{backgroundColor:"#252830",border:"none",padding:"15px",color:"white" ,width:"81%"}}
+            onChange={(e)=>dispatch(Setsearch(e.target.value))}  ></input>
 
 
             
