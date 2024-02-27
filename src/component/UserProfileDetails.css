@@ -53,3 +53,26 @@
 .link:hover{
     background-color: rgb(57, 59, 59);
 }
+@media screen and (max-width: 768px) {
+    .cont {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .image {
+        margin: 5px;
+    }
+
+    .dropdown {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        align-items: center;
+    }
+
+    .link {
+        padding-left: 15px;
+        width: 100%;
+    }
+}

@@ -134,3 +134,26 @@
     background-color: #53a26c;
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .signup{
+        display: none;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .right {
+        margin-left: 0;
+        padding-top: 3%;
+    }
+
+    .rightlower {
+        width: 100%;
+    }
+}

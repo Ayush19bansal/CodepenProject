@@ -82,3 +82,28 @@ label{
   background-color: transparent;
   border: 1px solid white;
 }
+
+@media screen and (max-width: 768px) {
+  .email,
+  .password,
+  .button,
+  .register,
+  .signupoptions {
+      width: 100%;
+      max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imgtag {
+      width: 80px; /* Adjust image width for smaller screens */
+  }
+
+  .register {
+      padding-inline: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .line {
+      width: 30%; /* Adjust line width for smaller screens */
+  }
+}

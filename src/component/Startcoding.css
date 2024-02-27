@@ -211,3 +211,29 @@
     justify-content: center;
     gap: 15px;
 }
+
+@media screen and (max-width: 768px) {
+    .newprojectcontainer {
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+
+    .header {
+        padding: 5px; /* Adjusted padding for smaller screens */
+    }
+
+    .save {
+        padding: 8px 15px; /* Adjusted padding for smaller screens */
+    }
+
+    .headerimg {
+        width: 80px; /* Adjusted width for smaller screens */
+    }
+
+    .newprojecttitle input {
+        width: 150px; /* Adjusted width for smaller screens */
+    }
+
+    .iframe {
+        height: 40vh; /* Adjusted height for smaller screens */
+    }
+}
